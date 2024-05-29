@@ -16,7 +16,7 @@ function App() {
     <AddBar/>
     <CheckSpot/>
     <NearBy/>
-    <BuildTeam/>
+    {/* <BuildTeam/> */}
     </div>
   
     </>
