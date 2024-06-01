@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // function CheckSpot() {
 //   return (
@@ -71,83 +71,129 @@ import React from 'react'
 
 // export default CheckSpot
 
-import Carousel from 'react-bootstrap/Carousel';
-
+import Carousel from "react-bootstrap/Carousel";
 
 function CheckSpot() {
-    return (
-        <>
-            <div style={{ margin: " 2px 600px 2px 600px", fontFamily: "cursive" }}>
-                <h3>Check your Spot !</h3>
+  return (
+    <>
+      <div className="d-flex justify-content-center mt-4 ft">
+        <h3>CHECK YOUR SPOT!</h3>
+      </div>
+
+      <div className="checkspot">
+        <Carousel
+          data-bs-theme="dark"
+          style={{ height: "300px", width: "1250px" }}
+        >
+          <Carousel.Item style={{ color: "black" }}>
+            <div className="row tab">
+              <div className="col-3 tab1">
+                <p>Cricket</p>
+                <img
+                  src="/images/Pictures/cricketicon.png"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
+              <div className="col-3 tab1">
+                <p>Football</p>
+                <img
+                  src="/images/Pictures/FootBall Icon.jpg"
+                  width="180px"
+                  height="200px"
+                ></img>
+
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
+
+              <div className=" col-3 tab1">
+                <p>Batmiton</p>
+                <img
+                  src="/images/Pictures/Batmiton icon.jpg"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
+              <div className="col-3 tab1">
+                <p>BasketBall</p>
+                <img
+                  src="/images/Pictures/BasketBall icon.png"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
             </div>
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item style={{ color: "black" }}>
+            <div
+              className="row"
+              style={{ paddingleft: "100px", paddingright: "100px" }}
+            >
+              <div className="col-3 tab1">
+                <p>Cricket</p>
+                <img
+                  src="/images/Pictures/cricketicon.png"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
+              <div className="col-3 tab1">
+                <p>Football</p>
+                <img
+                  src="/images/Pictures/FootBall Icon.jpg"
+                  width="180px"
+                  height="200px"
+                ></img>
 
-            <div className="checkspot">
-                <Carousel data-bs-theme="dark" style={{ height: "300px", width: "1250px"}}>
-                    <Carousel.Item style={{ color: "black" }}>
-                        <div className="row tab">
-                            <div className="col-3 tab1">
-                                <p>Cricket</p>
-                                <img src="/images/Pictures/cricketicon.png" width="180px" height="300px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                            <div className="col-3 tab1">
-                                <p>Football</p>
-                                <img src="/images/Pictures/FootBall Icon.jpg" width="180px" height="200px"></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
 
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-
-                            <div className=" col-3 tab1" >
-                                <p>Batmiton</p>
-                                <img src="/images/Pictures/Batmiton icon.jpg" width="180px" height="200px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                            <div className="col-3 tab1">
-                                <p>BasketBall</p>
-                                <img src="/images/Pictures/BasketBall icon.png" width="180px" height="200px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                        </div>
-                        <Carousel.Caption >
-
-
-
-                        </Carousel.Caption>
-
-                    </Carousel.Item>
-                    <Carousel.Item style={{ color: "black" }}>
-                        <div className="row" style={{ paddingleft: "100px", paddingright: "100px" }}>
-                            <div className="col-3 tab1">
-                                <p>Cricket</p>
-                                <img src="/images/Pictures/cricketicon.png" width="180px" height="200px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                            <div className="col-3 tab1">
-                                <p>Football</p>
-                                <img src="/images/Pictures/FootBall Icon.jpg" width="180px" height="200px"></img>
-
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-
-                            <div className=" col-3 tab1" >
-                                <p>Batmiton</p>
-                                <img src="/images/Pictures/Batmiton icon.jpg" width="180px" height="200px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                            <div className="col-3 tab1">
-                                <p>BasketBall</p>
-                                <img src="/images/Pictures/BasketBall icon.png" width="180px" height="200px"></img>
-                                <button type="button" className="btn btn-danger">Check Your Spot</button>
-                            </div>
-                        </div>
-                        <Carousel.Caption>
-
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+              <div className=" col-3 tab1">
+                <p>Batmiton</p>
+                <img
+                  src="/images/Pictures/Batmiton icon.jpg"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
+              <div className="col-3 tab1">
+                <p>BasketBall</p>
+                <img
+                  src="/images/Pictures/BasketBall icon.png"
+                  width="180px"
+                  height="200px"
+                ></img>
+                <button type="button" className="btn btn-danger">
+                  Check Your Spot
+                </button>
+              </div>
             </div>
-        </>
-    );
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </>
+  );
 }
 
 export default CheckSpot;

@@ -1,52 +1,56 @@
-import React from 'react'
-import './App.css';
+import React from "react";
+import "./App.css";
 import Carousel from "react-bootstrap/Carousel";
 
 function AddBar() {
-    return (
-      <div className="addbar">
-      <Carousel >
-        <Carousel.Item style={{backgroundColor:"black"}}>
+  return (
+    <div className="addbar mt-2">
+      <Carousel>
+        <Carousel.Item style={{ backgroundColor: "black" }}>
           <img
-            style={{ height: "400px", width: "1300px" }}
+            style={{ height: "300px" }}
             className="d-block w-100"
-            src="/images/Pictures/AddBar1.jpg"
+            src="/images/Pictures/AddBar2.jpg"
             alt="First slide"
           />
-          <Carousel.Caption className="addbarbutton"> 
+          <Carousel.Caption className="addbarbutton">
             {/* <h3>First slide label</h3> */}
-            <button type="button" className="btn btn-light" style={{ width: "220px", height:"80px"}}>BOOK U'R SLOT NOW !</button>
+            <button
+              type="button"
+              className="btn btn-light"
+              style={{ width: "220px", height: "70px" }}
+            >
+              BOOK U'R SLOT NOW !
+            </button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            style={{ height: "200px", width: "1300px" }}
+            style={{ height: "300px" }}
             className="d-block w-100"
             src="/images/Pictures/criz icon.png"
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3></h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            style={{ height: "400px", width: "1300px" }}
+            style={{ height: "300px" }}
             className="d-block w-100"
             src="/images/Pictures/Sloapy Footbal frame.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3></h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      </div>
-    );
-  }
+    </div>
+  );
+}
 
-export default AddBar
+export default AddBar;

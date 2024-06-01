@@ -1,211 +1,254 @@
 /* Navbar */
-.homebar{
+.homebar {
   height: 90px;
   padding-left: 50px;
-  margin-bottom: 20px;
+
 }
-.menu{
+
+.menu {
   /* margin-left: 10px;
   margin-top: 25px; */
-  font-family:cursive;
+  font-family: cursive;
   border: 2px solid black;
   border-radius: 1px;
   padding: 0px 5px 0px 5px;
   margin: 0px 10px 0px 10px;
 }
-.menu1{
+
+.menu1 {
   margin-bottom: 10px;
   padding: 10px;
   margin-left: 75px;
 }
-.searchbar{
-  height: 38px; 
-  width: 450px; 
+
+.searchbar {
+  height: 38px;
+  width: 450px;
   margin-top: 15px
 }
-.city{
+
+.city {
   font-size: 24px;
-   margin-left: 10px; 
-   margin-right: 10px;
-   margin-bottom: 10px;
-   margin-top: 10px
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px
 }
-.signin{
-  width: 120px; 
-  height: 38px; 
+
+.signin {
+  width: 120px;
+  height: 38px;
   background-color: rgb(227, 145, 145);
-   color: black; 
-   margin-left: 10px; 
-   margin-right: 10px; 
-   margin-top: 15px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
 /* Addbar */
 
-.addbar{
-  margin: 0px 30px 20px 30px;
-  margin-left: 90px;
-  margin-right: 90px;
-  height: 350px;
-  width: 1310px;
-}
-.addbarbutton{
-  margin-bottom: 0px;
-  margin-right: 625px;
+.addbar {
+  /* height: 300px; */
+  /* width: 1310px; */
 }
 
+.carousel-indicators {
+  visibility: hidden;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 10%;
+  height: 100px;
+  margin-right: 155px;
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 20%;
+  margin-left: 155px;
+}
+
+.addbarbutton {
+  margin-bottom: -30px;
+  margin-right: 675px;
+}
 
 
- /* Check Spot */
 
- .checkspot{
+/* Check Spot */
+
+.checkspot {
   /* background-color: black; */
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: aliceblue;
- }
- .tab{
+}
+
+.ft {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.tab {
   /* height: 300px; */
   /* width: 1050px; */
   display: flex;
   flex-direction: row;
   justify-items: center;
- }
- .tab1{
+}
+
+.tab1 {
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- .tab1 p{
-  font-weight: 600; 
+}
+
+.tab1 p {
+  font-weight: 600;
   margin: 20px;
   font-size: 24px;
- }
- .tab1 img{
+}
+
+.tab1 img {
   border: 1px;
   border-radius: 5px;
- }
- 
+}
 
- /* NearBy */
 
- .Nearbyheading{
-  margin-left: 90px; 
+/* NearBy */
+
+.Nearbyheading {
+  margin-left: 90px;
   margin-top: 30px
- }
- .Nearbybutton{
-  background-color: white; 
-  margin-left: 90px; 
-  margin-right: 90px; 
+}
+
+.Nearbybutton {
+  background-color: white;
+  margin-left: 90px;
+  margin-right: 90px;
   margin-top: 30px;
-   border-radius: 0px;
-   display: flex;
-   flex-direction: row;
-   justify-items: center;
- }
- .Nearbybutton1{
+  border-radius: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-  margin-top: 20px;
- }
- .Nearbybutton1 img{
-  border-radius: 10px;
- }
- .Nearbybutton1 p{
-  font-weight: 600; 
-  margin: 5px;
-  font-size: 24px;
- }
-
- /* BuildTeam */
- .buildteamheading{
-  margin-left: 90px; 
-  margin-top: 30px
- }
- .buildteam{
-  display: flex; 
   flex-direction: row;
   justify-items: center;
- }
- .buildteam1{
-  background-color: white;
-   margin-left: 90px; 
-   margin-right: 30px; 
-  margin-top: 30px;
-  border: 1px; 
-  border-radius: 26px; 
+}
+
+.Nearbybutton1 {
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- .buildteam1 p{
-  font-weight: 600;
-   margin: 5px;
-   font-size: 20px;
- }
- .buildteam1 h3{
   margin-top: 20px;
- }
- .buildteam1 button{
+}
+
+.Nearbybutton1 img {
+  border-radius: 10px;
+}
+
+.Nearbybutton1 p {
+  font-weight: 600;
+  margin: 5px;
+  font-size: 24px;
+}
+
+/* BuildTeam */
+.buildteamheading {
+  margin-left: 90px;
+  margin-top: 30px
+}
+
+.buildteam {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.buildteam1 {
+  background-color: white;
+  margin-left: 90px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border: 1px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buildteam1 p {
+  font-weight: 600;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.buildteam1 h3 {
+  margin-top: 20px;
+}
+
+.buildteam1 button {
   width: 250px;
   height: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
- }
+}
 
- /* DownBar */
+/* DownBar */
 
-.downbar{
+.downbar {
   background-color: black;
   color: whitesmoke;
   margin-top: 20px;
   padding-top: 20px;
 }
-.downbar1{
-  display: flex; 
+
+.downbar1 {
+  display: flex;
   flex-direction: row;
   justify-items: center;
 }
 
-.downbar1 img{
+.downbar1 img {
   margin-left: 120px;
 }
-.downbar1 p{
+
+.downbar1 p {
   margin-right: 20px;
   margin-left: 30px;
 }
-.downbar1 button{
+
+.downbar1 button {
   margin-left: 600px;
 }
-.downbarbutton{
+
+.downbarbutton {
   width: 40px;
   height: 30px;
   margin-left: 20px;
   border-radius: 50%;
 }
- 
+
 /* WhatSpot */
 
-.whatspothead{
-display: flex;
-flex-direction: row;
-justify-content: center;
-text-align: center;
-margin-top: 60px ;
+.whatspothead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
 }
 
-.whatspotbutton{
+.whatspotbutton {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
   padding-top: 20px;
 }
-.whatspotbutton img{
-width: 260px;
-height:200px;
-}
 
+.whatspotbutton img {
+  width: 260px;
+  height: 200px;
+}
