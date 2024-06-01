@@ -8,7 +8,7 @@ function AddBar() {
       <Carousel >
         <Carousel.Item style={{backgroundColor:"black"}}>
           <img
-            style={{ height: "200px", width: "1300px" }}
+            style={{ height: "400px", width: "1300px" }}
             className="d-block w-100"
             src="/images/Pictures/AddBar1.jpg"
             alt="First slide"

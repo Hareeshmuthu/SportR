@@ -17,15 +17,15 @@ function NavBar() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 icons1 menu1">
                             <li className="nav-item icons1 menu">
                                 <Link className="nav-link active text-black " aria-current="page"
-                                    to="/"><i class="fa-solid fa-house fa-xl"></i><br/>Home</Link>
+                                    to="/"><i class="fa-solid fa-house fa-xl" style={{marginLeft:"7px"}}></i><br/>Home</Link>
                             </li>
                             <li className="nav-item icons1 menu">
-                                <button className="nav-link active text-black menu" aria-current="page"
-                                    href="https://www.hackerrank.com/dashboard"><i class="fa-solid fa-flag-checkered fa-fade fa-xl"></i><br/>Sports</button>
+                                <Link className="nav-link active text-black menu" aria-current="page"
+                                    to="/"><i class="fa-solid fa-flag-checkered fa-fade fa-xl" style={{marginLeft:"15px"}}></i><br/>Sports</Link>
                             </li>
                             <li className="nav-item icons1 menu">
-                                <button className="nav-link active text-black menu" aria-current="page"
-                                    href="https://www.hackerrank.com/dashboard"><i class="fa-solid fa-person-skiing fa-spin fa-xl"></i><br/>Fun Activities</button>
+                                <Link className="nav-link active text-black menu" aria-current="page"
+                                    to="/"><i class="fa-solid fa-person-skiing fa-spin fa-xl" style={{marginLeft:"35px"}}></i><br/>Fun Activities</Link>
                             </li>
                             <li className="nav-item icons1 menu">
                                 <Link className="nav-link active text-black menu"  aria-current="page"

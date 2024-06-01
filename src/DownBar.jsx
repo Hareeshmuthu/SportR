@@ -8,8 +8,8 @@ function DownBar() {
                     <img src="images/Pictures/Ti-Icon.png" width="30px" />
                     <p>List Your Spot !</p>
                     <p> Make your Spot with the more footsteps</p>
-                    <button type="button" class="btn btn-danger" style={{ width: "150px", height: "30px", marginleft: "650px" }}>List
-                        Today</button>
+                    <button type="button" class="btn btn-danger" style={{ width: "350px", height: "30px", }}>List
+                        Today and Patner With Us</button>
                 </div>
                 <hr />
                 <div class="social" style={{ marginLeft: "600px", paddingBottom:"30px" }}>
