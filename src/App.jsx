@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar';
 import "bootstrap/dist/css/bootstrap.min.css"
-import AddBar from './AddBar';
-import CheckSpot from './CheckSpot';
-import NearBy from './NearBy';
-import BuildTeam from './BuildTeam';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './Home';
+import ListSpot from './ListSpot';
 
 function App() {
   return (
     <>
-    <div style={{backgroundColor:"#c3bbb0"}}>
-      
-    <NavBar/>
-    <AddBar/>
-    <CheckSpot/>
-    <NearBy/>
-    {/* <BuildTeam/> */}
-    </div>
-  
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          {/* <Route path='/funactivities' element={}></Route> */}
+          <Route path='/listyourspot' element={<ListSpot/>}></Route>
+          {/* <Route path='/signin' element={}></Route> */}
+          {/* <Route path='/nearbygrounds' element={}></Route> */}
+          {/* <Route path='/createnow' element={}></Route> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

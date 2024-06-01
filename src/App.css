@@ -1,12 +1,22 @@
 /* Navbar */
 .homebar{
-  height: 70px;
-  padding-left: 50px
+  height: 90px;
+  padding-left: 50px;
+  margin-bottom: 20px;
 }
 .menu{
-  margin-left: 40px;
-  margin-top: 25px;
-  font-family:cursive
+  /* margin-left: 10px;
+  margin-top: 25px; */
+  font-family:cursive;
+  border: 2px solid black;
+  border-radius: 1px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 10px 0px 10px;
+}
+.menu1{
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 75px;
 }
 .searchbar{
   height: 38px; 
@@ -32,80 +42,52 @@
 
 /* Addbar */
 
+.addbar{
+  margin: 0px 30px 20px 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 350px;
+  width: 1310px;
+}
+.addbarbutton{
+  margin-bottom: 0px;
+  margin-right: 625px;
+}
 
-
-.addbar1{
-  /* background-image: url("/images/Pictures/Batmiton Frame1.jpg"); */
-  background-color: #ff0000;
-  background-repeat: no-repeat;
-  background-size: 1345px 245px;
-  /* margin-left: 90px; */
-  /* margin-right: 90px; */
-  margin: 30px 90px 10px 90px;
-  /* padding-right: 90px; */
-  /* margin-top: 30px; */
-  border: 1px;
-  border-radius: 26px;
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-.addbar1 p{
-  font-weight: 600;
-  color: #ff0000;
-  margin: 20px;
-  font-size: 32px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: white;
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px
-}
-.addbar1 p:nth-child(2){
-  font-weight: 100;
-  background-color: white;
-   border: 1px;
-   border-radius: 5px;
-   padding-left: 20px;
-   padding-right: 20px;
-}
 
 
  /* Check Spot */
 
  .checkspot{
-  background-color: white;
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
-  border-radius: 20px
+  /* background-color: black; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: aliceblue;
  }
  .tab{
+  /* height: 300px; */
+  /* width: 1050px; */
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+ }
+ .tab1{
   display: flex;
   flex-direction: column;
   align-items: center;
  }
- .tab p:nth-child(2){
+ .tab1 p{
   font-weight: 600; 
   margin: 20px;
   font-size: 24px;
  }
- .tab img:nth-child(2){
+ .tab1 img{
   border: 1px;
   border-radius: 5px;
  }
- .button img:nth-child(2){
-  width: 200px;
-  margin-bottom: 15px;
-  margin-top: 10px
- }
- .navigationbutton{
-  width: 70px
- }
- .navigationbutton1{
-  background-color: black;
-   border-radius: 15%; 
-   width: 50px
- }
+ 
 
  /* NearBy */
 
@@ -117,8 +99,8 @@
   background-color: white; 
   margin-left: 90px; 
   margin-right: 90px; 
-  margin-top: 30px;border: 1px;
-   border-radius: 26px;
+  margin-top: 30px;
+   border-radius: 0px;
    display: flex;
    flex-direction: row;
    justify-items: center;
@@ -129,11 +111,10 @@
   align-items: center; 
   margin-top: 20px;
  }
- .Nearbybutton1 img:nth-child(2){
-  border: 1px;
-  border-radius: 20px;
+ .Nearbybutton1 img{
+  border-radius: 10px;
  }
- .Nearbybutton1 p:nth-child(2){
+ .Nearbybutton1 p{
   font-weight: 600; 
   margin: 5px;
   font-size: 24px;
@@ -160,17 +141,64 @@
   flex-direction: column;
   align-items: center;
  }
- .buildteam1 p:nth-child(2){
+ .buildteam1 p{
   font-weight: 600;
    margin: 5px;
    font-size: 20px;
  }
- .buildteam1 h3:nth-child(2){
+ .buildteam1 h3{
   margin-top: 20px;
  }
- .buildteam1 button:nth-child(2){
+ .buildteam1 button{
   width: 250px;
   height: 60px;
   margin-top: 20px;
-   margin-bottom: 20px;
+  margin-bottom: 20px;
  }
+
+ /* DownBar */
+
+.downbar{
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.downbar1{
+  display: flex; 
+  flex-direction: row;
+  justify-items: center;
+}
+
+.downbar1 img{
+  margin-left: 120px;
+}
+.downbar1 p{
+  margin-right: 20px;
+  margin-left: 30px;
+}
+.downbar1 button{
+  margin-left: 600px;
+}
+.downbarbutton{
+  width: 40px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+ 
+/* WhatSpot */
+
+.whatspothead{
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+}
+
+.whatspotbutton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
