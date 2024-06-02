@@ -11,7 +11,7 @@ function Home() {
     return (
         <div style={{backgroundColor:"#c3bbb0"}}>
             <NavBar />
-            <AddBar/><br /><br />
+            <AddBar/>
             <CheckSpot/>
             <NearBy/>
             <BuildTeam/>
