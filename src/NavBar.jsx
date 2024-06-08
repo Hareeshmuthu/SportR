@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
+import Cities from "./Cities";
 
 function NavBar() {
   return (
@@ -69,7 +70,7 @@ function NavBar() {
                   Fun Activities
                 </Link>
               </li>
-              <li className="nav-item icons1 menu">
+              {/* <li className="nav-item icons1 menu">
                 <Link
                   className="nav-link active text-black menu"
                   aria-current="page"
@@ -80,9 +81,9 @@ function NavBar() {
                     style={{ marginLeft: "35px" }}
                   ></i>
                   <br />
-                  List your Spot
+                  List and Patner Us
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item icons1 menu">
                 <button
                   className="nav-link active text-black menu"
@@ -95,6 +96,9 @@ function NavBar() {
                 </button>
               </li>
             </ul>
+            <div className="menu1" style={{marginRight:"30px"}}>
+              <Cities />
+            </div>
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2 searchbar"
@@ -102,15 +106,6 @@ function NavBar() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <li className="nav">
-                <a
-                  className="nav-link text-dark city"
-                  href="https://www.hackerrank.com/products/developer-skills-platform/"
-                >
-                  City
-                </a>
-              </li>
-
               <button
                 type="button"
                 className="btn btn-danger signin"

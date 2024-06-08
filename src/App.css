@@ -2,7 +2,6 @@
 .homebar {
   height: 90px;
   padding-left: 50px;
-
 }
 
 .menu {
@@ -18,7 +17,7 @@
 .menu1 {
   margin-bottom: 10px;
   padding: 10px;
-  margin-left: 75px;
+  margin-left: 5px;
 }
 
 .searchbar {
@@ -31,8 +30,9 @@
   font-size: 24px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px
+  /* margin-bottom: 10px; */
+  margin-top: 23px;
+  width: 250px;
 }
 
 .signin {
@@ -43,6 +43,22 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 15px;
+}
+
+/* NavBAr1 */
+
+.navbar1 {
+  height: 30px;
+  padding-left: 800px;
+  background-color:  rgb(113, 113, 113) ;
+  color: white;
+}
+.nav1{
+  padding: 0px 2px 0px 2px;
+  margin: 0px 2px 0px 2px;
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
 }
 
 /* Addbar */
@@ -66,7 +82,8 @@
 .carousel-control-next-icon {
   background-color: black;
   border-radius: 20%;
-  margin-left: 155px;
+  margin-left: 175px;
+  width: 100px;
 }
 
 .addbarbutton {
@@ -81,6 +98,7 @@
 .checkspot {
   /* background-color: black; */
   margin-top: 10px;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,8 +127,9 @@
 
 .tab1 p {
   font-weight: 600;
-  margin: 20px;
+  margin: 10px;
   font-size: 24px;
+  color: white;
 }
 
 .tab1 img {
@@ -122,19 +141,21 @@
 /* NearBy */
 
 .Nearbyheading {
-  margin-left: 90px;
-  margin-top: 30px
+ padding-top: 40px;
+  color: black;
+  font-weight: 900;
+  background-color: white;
+  text-transform: uppercase;
 }
 
 .Nearbybutton {
-  background-color: white;
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-top: 30px;
+  padding-top: 30px;
   border-radius: 0px;
   display: flex;
   flex-direction: row;
   justify-items: center;
+  background-color: white;
+  color: black;
 }
 
 .Nearbybutton1 {
@@ -155,15 +176,22 @@
 }
 
 /* BuildTeam */
+
 .buildteamheading {
-  margin-left: 90px;
-  margin-top: 30px
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .buildteam {
   display: flex;
   flex-direction: row;
   justify-items: center;
+  padding-bottom: 50px;
 }
 
 .buildteam1 {
@@ -198,7 +226,7 @@
 /* DownBar */
 
 .downbar {
-  background-color: black;
+  background-color: rgb(113, 113, 113);
   color: whitesmoke;
   margin-top: 20px;
   padding-top: 20px;
@@ -220,7 +248,7 @@
 }
 
 .downbar1 button {
-  margin-left: 600px;
+  margin-left: 450px;
 }
 
 .downbarbutton {
@@ -230,6 +258,16 @@
   border-radius: 50%;
 }
 
+.quicklinks{
+margin: 10px 0px 0px 120px;
+padding-bottom: 15px;
+}
+.quicklinks a{
+  margin-left: 20px;
+  }
+
+
+
 /* WhatSpot */
 
 .whatspothead {
@@ -238,17 +276,68 @@
   justify-content: center;
   text-align: center;
   margin-top: 60px;
+  color: white;
 }
 
 .whatspotbutton {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 
 .whatspotbutton img {
   width: 260px;
   height: 200px;
+}
+
+
+/* List */
+
+#dropdown-basic-button {
+  background-color: rgb(217, 229, 229);
+  min-width: 635px;
+  color: black;
+  border: 1px solid rgb(237, 223, 223);
+}
+
+.dropdown-menu {
+  width: 635px;
+}
+.mt{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Servicesweoffer */
+
+.servicesofferhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+}
+
+.servicesofferbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 35px;
+}
+
+.servicesofferbutton img {
+  width: 300px;
+  height: 200px;
+}
+.servicesoffercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 3000px;
+  margin: 65px 0 35px 0;
+  padding-top: 50px;
 }

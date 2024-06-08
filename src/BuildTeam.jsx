@@ -3,8 +3,8 @@ import React from 'react'
 function BuildTeam() {
   return (
     <>
-        <div class="buildteamheading">
-            <h4>Build your Team ;</h4>
+        <div class="buildteamheading" id="buildteam">
+            <h2>Build your Team </h2>
         </div>
         <div class="buildteam">
             <div class="col-5 buildteam1">
@@ -21,6 +21,7 @@ function BuildTeam() {
                 <button type="button" class="btn btn-primary">Join Now</button>
             </div>
         </div>
+        
     </>
   )
 }
