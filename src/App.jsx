@@ -6,7 +6,6 @@ import ListSpot from './ListSpot';
 import Forms from './Forms';
 
 
-
 function App() {
   return (
     <>

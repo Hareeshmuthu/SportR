@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import "./App.css"
 
 function WhatSpot() {
     return (
-        <div>
+        <>
             <div className='whatspothead'>
 
                 <div className='row'>
@@ -57,7 +58,7 @@ function WhatSpot() {
                 <a href='/listyourspot/forms'><button type="button" class="btn btn-danger" style={{ width: "600px", }}>Patner With Us Now</button></a>
             </div>
 
-        </div>
+        </>
     )
 }
 
