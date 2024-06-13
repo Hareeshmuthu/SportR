@@ -1,6 +1,7 @@
 import React from "react";
-
 import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css"
 
 function CheckSpot() {
   return (
@@ -9,7 +10,7 @@ function CheckSpot() {
         <h2 style={{color:"white"}}>Find YOUR SPOT!</h2>
       </div>
 
-      <div className="checkspot">
+      <div className="checkspot custom-carousel"> {/* Add custom-carousel class */}
         <Carousel
           data-bs-theme="dark"
           style={{ height: "300px", width: "1250px" }}

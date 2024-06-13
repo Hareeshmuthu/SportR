@@ -96,7 +96,7 @@ function NavBar() {
                 </button>
               </li>
             </ul>
-            <div className="menu1" style={{marginRight:"30px"}}>
+            <div className="menu1 mt-3" style={{ marginRight: "30px"}}>
               <Cities />
             </div>
             <form className="d-flex" role="search">
