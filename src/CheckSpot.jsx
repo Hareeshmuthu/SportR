@@ -20,18 +20,20 @@ function CheckSpot() {
               <div className="col-3 tab1">
                 <p>Cricket</p>
                 <img
-                  src="/images/Pictures/Find Spot/cricketicon.png"
+                  src="/images/Pictures/Find Spot/Cricket1.jpeg"
                   width="250px"
                   height="300px"
                 ></img><br/>
-                <button type="button" className="btn btn-danger">
+                <button type="button" className="btn btn-light">
                   Find Your Spot
                 </button><br/>
+                {/* <button> I'M READY
+                </button> */}
               </div>
               <div className="col-3 tab1">
                 <p>Football</p>
                 <img
-                  src="/images/Pictures/Find Spot/FootBall Icon.jpg"
+                  src="/images/Pictures/Find Spot/Football1.jpeg"
                   width="250px"
                   height="300px"
                 ></img><br/>
@@ -44,7 +46,7 @@ function CheckSpot() {
               <div className=" col-3 tab1">
                 <p>Batmiton</p>
                 <img
-                  src="/images/Pictures/Find Spot/Batmiton icon.jpg"
+                  src="/images/Pictures/Find Spot/Batmiton1.jpg"
                  width="250px"
                   height="300px"
                 ></img><br/>
@@ -55,7 +57,7 @@ function CheckSpot() {
               <div className="col-3 tab1">
                 <p>BasketBall</p>
                 <img
-                  src="/images/Pictures/Find Spot/BasketBall icon.png"
+                  src="/images/Pictures/Find Spot/Basketball3.jpg"
                  width="250px"
                   height="300px"
                 ></img><br/>
@@ -74,7 +76,7 @@ function CheckSpot() {
               <div className="col-3 tab1">
                 <p>Swimming</p>
                 <img
-                  src="/images/Pictures/Find Spot/Swimming icon.png"
+                  src="/images/Pictures/Find Spot/Swimming.webp"
                   width="250px"
                   height="300px"
                 ></img><br/>
@@ -85,7 +87,7 @@ function CheckSpot() {
               <div className="col-3 tab1">
                 <p>Gym</p>
                 <img
-                  src="/images/Pictures/Find Spot/Gym icon.jpeg"
+                  src="/images/Pictures/Find Spot/Gym.jpeg"
                  width="250px"
                   height="300px"
                 ></img><br/>
@@ -98,7 +100,7 @@ function CheckSpot() {
               <div className=" col-3 tab1">
                 <p>Sloapy Football</p>
                 <img
-                  src="/images/Pictures/Find Spot/Soapy Football icon.png"
+                  src="/images/Pictures/Find Spot/Soapy Football.jpeg"
                  width="250px"
                   height="300px"
                 ></img><br/>
@@ -109,7 +111,7 @@ function CheckSpot() {
               <div className="col-3 tab1">
                 <p>PaintBall Shooting</p>
                 <img
-                  src="/images/Pictures/Find Spot/Paint Ball Shooting.png"
+                  src="/images/Pictures/Find Spot/PaintBall Shooting.png"
                   width="250px"
                   height="300px"
                 ></img><br/>
