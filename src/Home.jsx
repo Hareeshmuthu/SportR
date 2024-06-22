@@ -5,7 +5,6 @@ import CheckSpot from './CheckSpot';
 import NearBy from './NearBy';
 import BuildTeam from './BuildTeam';
 import DownBar from './DownBar';
-import OnlineSales from './OnlineSales';
 import React from 'react'
 
 
@@ -19,7 +18,6 @@ function Home() {
             <NearBy/>
             <BuildTeam/>
             <DownBar/>
-            {/* <OnlineSales/> */}
             
             
         </div>

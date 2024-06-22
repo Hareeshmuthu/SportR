@@ -62,6 +62,50 @@
   color: white;
 }
 
+.form-control1 {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+}
+
+.form-control1 input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: black;
+}
+
+.form-control1 input:focus,
+.form-control1 input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control1 label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control1 label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.form-control1 input:valid+label span {
+  color: lightblue;
+  transform: translateY(-20px);
+}
+
 /* Addbar */
 
 .addbar {
@@ -348,7 +392,54 @@
   justify-content: center;
   padding-top: 35px;
 }
+/* .whatspotbutton {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
 
+.whatspotbutton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatspotbutton::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+
+.whatspotbutton:hover::after {
+  filter: blur(30px);
+} 
+
+.whatspotbutton:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+} */
 .whatspotbutton img {
   width: 260px;
   height: 200px;

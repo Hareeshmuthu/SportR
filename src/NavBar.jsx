@@ -96,16 +96,24 @@ function NavBar() {
                 </button>
               </li>
             </ul>
-            <div className="menu1 mt-3" style={{ marginRight: "30px"}}>
+            <div className="menu1 mt-3" style={{ marginRight: "30px" }}>
               <Cities />
             </div>
             <form className="d-flex" role="search">
-              <input
+              {/* <input
                 className="form-control me-2 searchbar"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
-              />
+              /> */}
+              <div class="form-control1">
+                <input type="value" required=""></input>
+                <label>
+                    <span style={{transitionDelay:"250ms"}}>S</span><span style={{transitionDelay:"200ms"}}>e</span><span style={{transitionDelay:"150s"}}>a</span><span style={{transitionDelay:"100s"}}>r</span><span style={{transitionDelay:"1s"}}>c</span><span style={{transitionDelay:"0s"}}>h</span>
+                  </label>
+                  
+              
+              </div>
               <button
                 type="button"
                 className="btn btn-danger signin"

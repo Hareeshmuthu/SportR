@@ -61,7 +61,7 @@ function Form() {
               type="number"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Type Your Booking Mobile Number"
+              placeholder="Booking Mobile Number"
             />
           </div>
         </div>
@@ -92,7 +92,7 @@ function Form() {
               type="text"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Type Your Full Name"
+              placeholder="Full Name"
             />
           </div>
           <div class="col-6 mb-3">
@@ -100,7 +100,7 @@ function Form() {
               type="mail"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Type Your Email Address"
+              placeholder="Email Address"
             />
           </div>
         </div>
@@ -110,7 +110,7 @@ function Form() {
               type="number"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="Type Your MobileNumber"
+              placeholder="MobileNumber"
             />
           </div>
         </div>

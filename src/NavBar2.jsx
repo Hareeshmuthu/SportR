@@ -3,7 +3,7 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import Cities from "./Cities";
 
-function NavBar1() {
+function NavBar2() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar1">
@@ -29,7 +29,7 @@ function NavBar1() {
                   href="#findyourspot"
                   style={{color:"white"}}
                 >
-                  Find Your Spot
+                  What is Your Spot For?
                 </a>
               </li>
               <li className="nav-item icons1 nav1">
@@ -39,10 +39,10 @@ function NavBar1() {
                   href="#Nearby"
                   style={{color:"white"}}
                 >
-                  Near By Ground
+                  What we Offer
                 </a>
               </li>
-              <li className="nav-item icons1 nav1">
+              {/* <li className="nav-item icons1 nav1">
                 <a
                   className="nav-link active  nav1"
                   aria-current="page"
@@ -52,7 +52,7 @@ function NavBar1() {
         
                  Build Your Team
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item icons1 nav1" style={{border:"1px",paddingLeft:"650px"}}>
                 <Link
                   className="nav-link active nav1"
@@ -60,7 +60,7 @@ function NavBar1() {
                   to="/listyourspot"
                   style={{color:"white"}}
                 >
-                 Partner us.
+                 List now 
                 </Link>
               </li>         
             </ul>
@@ -71,4 +71,4 @@ function NavBar1() {
   );
 }
 
-export default NavBar1;
+export default NavBar2;
