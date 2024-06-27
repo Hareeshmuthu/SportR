@@ -1,27 +1,24 @@
-import AddBar from './AddBar';
-import NavBar from './NavBar';
-import NavBar1 from './NavBar1';
-import CheckSpot from './CheckSpot';
-import NearBy from './NearBy';
-import BuildTeam from './BuildTeam';
-import DownBar from './DownBar';
-import React from 'react'
-
+import AddBar from "./Poster Content/AddBar";
+import NavBar from "./NavBar1 Components/NavBar";
+import NavBar1 from "./NavBar2 Components/NavBar1";
+import CheckSpot from "./Find Your Spot/CheckSpot";
+import NearBy from "./NearBy Content/NearBy";
+import BuildTeam from "./Build Your Team Content/BuildTeam";
+import DownBar from "./Contact Us/DownBar";
+import React from "react";
 
 function Home() {
-    return (
-        <div style={{backgroundColor:"black"}}>
-            <NavBar />
-            <NavBar1/>
-            <AddBar/>
-            <CheckSpot/>
-            <NearBy/>
-            <BuildTeam/>
-            <DownBar/>
-            
-            
-        </div>
-    )
+  return (
+    <div style={{ backgroundColor: "black" }}>
+      <NavBar />
+      <NavBar1 />
+      <AddBar />
+      <CheckSpot />
+      <NearBy />
+      <BuildTeam />
+      <DownBar />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
