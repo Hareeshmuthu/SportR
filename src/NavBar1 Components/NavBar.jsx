@@ -1,9 +1,64 @@
-import React from "react";
-import "./App.css";
+import React, { useState } from "react";
+// import "./App.css";
 import { Link } from "react-router-dom";
-import Cities from "./Cities";
+import SelectCity from "./SelectCity";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Select from "react-select";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
+  const [showCityDropdown, setshowCityDropdown] = useState(false);
+  const navigate = useNavigate();
+
+  const cityOptions = [
+    { value: "Coimbatore", label: "Coimbatore" },
+    { value: "Chennai", label: "Chennai" },
+    { value: "Madurai", label: "Madurai" },
+  ];
+
+  const handleShowOnlineSales = () => setshowCityDropdown(true);
+  const handleCloseOnlineSales = () => setshowCityDropdown(false);
+
+  const handleCityChange = (selectedOption) => {
+    if (selectedOption) {
+      navigate(`/city/${selectedOption.value}`);
+    }
+    handleCloseOnlineSales();
+  };
+
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      backgroundColor: "#f8f9fa",
+      borderColor: "#ced4da",
+      boxShadow: "none",
+      "&:hover": {
+        borderColor: "#868e96",
+      },
+    }),
+    menu: (provided) => ({
+      ...provided,
+      zIndex: 9999,
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isFocused ? "#e9ecef" : "white",
+      color: "#495057",
+      "&:hover": {
+        backgroundColor: "#e9ecef",
+      },
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: "#6c757d",
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "#495057",
+    }),
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light homebar">
@@ -43,19 +98,43 @@ function NavBar() {
                 </Link>
               </li>
               <li className="nav-item icons1 menu">
-                <Link
-                  className="nav-link active text-black menu"
+                <Button
+                  className="nav-link text-black menu no-hover-effect"
                   aria-current="page"
-                  to="/"
+                  onClick={handleShowOnlineSales}
+                  style={{
+                    backgroundColor: "inherit",
+                    color: "inherit",
+                  }}
                 >
                   <i
-                    class="fa-solid fa-flag-checkered fa-fade fa-xl"
+                    className="fa-solid fa-flag-checkered fa-fade fa-xl"
                     style={{ marginLeft: "15px" }}
                   ></i>
                   <br />
                   Sports
-                </Link>
+                </Button>
               </li>
+
+              <Modal
+                show={showCityDropdown}
+                onHide={handleCloseOnlineSales}
+                style={{ paddingTop:"200px" }}
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title>Choose Your Location</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <Select
+                    options={cityOptions}
+                    onChange={handleCityChange}
+                    placeholder="Select a city"
+                    styles={customStyles}
+                    isClearable
+                  />
+                </Modal.Body>
+              </Modal>
+
               <li className="nav-item icons1 menu">
                 <Link
                   className="nav-link active text-black menu"
@@ -70,20 +149,6 @@ function NavBar() {
                   Fun Activities
                 </Link>
               </li>
-              {/* <li className="nav-item icons1 menu">
-                <Link
-                  className="nav-link active text-black menu"
-                  aria-current="page"
-                  to="/listyourspot"
-                >
-                  <i
-                    class="fa-solid fa-circle-chevron-down fa-xl"
-                    style={{ marginLeft: "35px" }}
-                  ></i>
-                  <br />
-                  List and Patner Us
-                </Link>
-              </li> */}
               <li className="nav-item icons1 menu">
                 <button
                   className="nav-link active text-black menu"
@@ -96,23 +161,16 @@ function NavBar() {
                 </button>
               </li>
             </ul>
-            <div className="menu1 mt-3" style={{ marginRight: "30px" }}>
-              <Cities />
-            </div>
+
+            <div className="menu1">{/* <SelectCity /> */}</div>
+
             <form className="d-flex" role="search">
-              {/* <input
-                className="form-control me-2 searchbar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              /> */}
-              <div class="form-control1">
-                <input type="value" required=""></input>
-                <label>
-                    <span style={{transitionDelay:"250ms"}}>S</span><span style={{transitionDelay:"200ms"}}>e</span><span style={{transitionDelay:"150s"}}>a</span><span style={{transitionDelay:"100s"}}>r</span><span style={{transitionDelay:"1s"}}>c</span><span style={{transitionDelay:"0s"}}>h</span>
-                  </label>
-                  
-              
+              <div class="textInputWrapper">
+                <input
+                  placeholder="Search Here"
+                  type="text"
+                  class="textInput"
+                />
               </div>
               <button
                 type="button"
